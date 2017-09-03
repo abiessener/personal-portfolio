@@ -16,6 +16,16 @@ myApp.service('GithubService', function($http) {
 
   // Object that will store our repo data
   var repos = {};
+
+  // Array of repo names to star
+  var reposToStar = [
+    'listings-weekend-5',
+    'employees-weekend-4',
+    'todo-weekend-3',
+    'calculator-weekend-2',
+    'carousel-weekend-1'
+  ];
+
   //Call to Github API to fetch list of user's repos
   function githubRepos(){
     $http({
@@ -24,6 +34,16 @@ myApp.service('GithubService', function($http) {
     }).then(function(response) {
       console.log(response.data);
       repos.data = response.data;
+
+      for (var i = 0; i < repos.data.length; i++) {
+        // console.log('checking', i, repos.data[i].name);
+
+        if(reposToStar.indexOf(repos.data[i].name) >= 0){
+          repos.data[i].starred = true;
+          // console.log('starred', i);
+        }
+      }
+
     });
   }
 

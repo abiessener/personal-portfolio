@@ -1,3 +1,11 @@
 .sortButton{
   cursor: pointer;
 }
+
+.codeStar{
+  color: goldenrod
+}
+
+.codeStarTd{
+  text-align: right;
+}
