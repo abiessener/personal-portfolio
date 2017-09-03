@@ -1,5 +1,5 @@
 myApp.controller('UserController', function(GithubService){
   console.log('UserController loaded.')
-  var vm = this;
-  vm.user = GithubService.user;
+  var self = this;
+  self.user = GithubService.user;
 });

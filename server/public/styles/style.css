@@ -9,3 +9,9 @@
 .codeStarTd{
   text-align: right;
 }
+
+.githubAvatar{
+  display: inline;
+  margin: 20px;
+  float: right;
+}
