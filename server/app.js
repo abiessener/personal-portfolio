@@ -10,8 +10,8 @@ app.use(express.static('server/public'));
 var request = require('request');
 
 // API Key & username are environment variables in Heroku
-var username = process.env.USER_NAME || require('./config.js').username;
-var oauthToken = process.env.GIT_TOKEN || require('./config.js').oauthToken;
+var username = process.env.GITHUB_USERNAME || require('./config.js').username;
+var oauthToken = process.env.GITHUB_AUTHTOKEN || require('./config.js').oauthToken;
 
 app.use(express.static('public'));
 

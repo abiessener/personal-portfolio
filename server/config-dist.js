@@ -1,6 +1,6 @@
 var config = {
-  username: '',
-  oauthToken: ''
+  username: process.env.GITHUB_USERNAME,
+  oauthToken: process.env.GITHUB_AUTHTOKEN
 }
 
 module.exports = config;
