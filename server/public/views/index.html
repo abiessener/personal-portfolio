@@ -7,12 +7,31 @@
     <script src="vendors/angular-route.min.js" charset="utf-8"></script>
     <script src="scripts/client.js" charset="utf-8"></script>
     <script src="scripts/user.controller.js" charset="utf-8"></script>
+    <script src="scripts/code.controller.js" charset="utf-8"></script>
+    <script src="scripts/home.controller.js" charset="utf-8"></script>
     <script src="scripts/github.service.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="vendors/bootstrap.min.css">
   </head>
   <body ng-app="myApp">
-    <h1>Hello World</h1>
-    <main ng-view>
+    <header>
+      <div class="nav navbar-default">
+        <div class="nav navbar-brand">
+          <a href="/">
+            Adam Biessener
+          </a>
+        </div>
+        <div>
+          <ul id="navlinks" class="nav navbar-nav navbar-right">
+            <li><a href="/">Home</a></li>
+            <li><a href="#/about">About Me</a></li>
+            <li><a href="#/code">My Code</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  
+    <main ng-view></main>
 
-    </main>
+
   </body>
 </html>
