@@ -14,5 +14,7 @@ myApp.config(function($routeProvider, $locationProvider) {
     }).when('/code', {
       templateUrl: '/views/templates/code.html',
       controller: 'CodeController as cc',
+    }).when('/portfolio', {
+      templateUrl: '/views/templates/portfolio.html',
     });
 });
