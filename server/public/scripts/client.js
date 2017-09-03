@@ -9,8 +9,7 @@ myApp.config(function($routeProvider, $locationProvider) {
       templateUrl: '/views/templates/about.html',
       controller: 'UserController as uc',
     }).when('/', {
-      templateUrl: '/views/templates/home.html',
-      controller: 'HomeController as hc',
+      redirectTo: '/about'
     }).when('/code', {
       templateUrl: '/views/templates/code.html',
       controller: 'CodeController as cc',
