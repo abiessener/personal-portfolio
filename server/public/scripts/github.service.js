@@ -22,7 +22,8 @@ myApp.service('GithubService', function($http) {
     'listings-weekend-5',
     'carousel-weekend-1',
     'prime-solo-project',
-    'prime-memory-game'
+    'prime-memory-game',
+    'prime-group-project'
   ];
 
   //Call to Github API to fetch list of user's repos
