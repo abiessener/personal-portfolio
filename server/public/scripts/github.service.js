@@ -20,9 +20,6 @@ myApp.service('GithubService', function($http) {
   // Array of repo names to star
   var reposToStar = [
     'listings-weekend-5',
-    'employees-weekend-4',
-    'todo-weekend-3',
-    'calculator-weekend-2',
     'carousel-weekend-1',
     'prime-solo-project',
     'prime-memory-game'
